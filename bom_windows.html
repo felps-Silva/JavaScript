@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+           <script> 
+           //Abertura de novas páginas web
+           var janela
+           function abrirPopUp(){
+               janela = window.open('', 'nova_janela', 'width: 200px, height: 100px')
+           }
+           function fecharPopUp(){
+               janela.close()
+           }
+           </script>
+    </head>
+    <body>
+        <button onclick="abrirPopUp()"> Abrir Janela </button>
+        <button onclick="fecharPopUp()"></buttononclick> Fechar Janela</button>
+        <button onclick="window.print()"> Imprimir </button>
+    </body>
+</html>

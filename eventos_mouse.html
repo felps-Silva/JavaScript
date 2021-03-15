@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+           <script> 
+            function acao1(){
+                alert('Elemento foi criado')
+            }
+            function acao2(){
+                alert('O cursor do mouse deixou a região do elemento')
+            }
+           </script>
+    </head>
+    <body>
+        <!-- Apenas um click, aparece a mensagem 
+        <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    -->
+        <!-- Apenas dois click, aparece a mensagem 
+        <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    -->
+    <!--  Aparece a mensagem no momento que solta o click 
+        <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    -->
+    <!--  Aparece a mensagem no momento que o mouse passa no elemento sem clickar
+        <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    -->
+    <!--  Aparece a mensagem no momento que entra no elemento e depois sai 
+        <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px"></div>
+    -->
+        <div onclick="acao1()" onmouseout="acao2()" style="background: #ccc; height: 150px; width: 150px"></div>
+    </body>
+</html>

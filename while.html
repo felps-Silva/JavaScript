@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+           <script> 
+           var x = 1
+
+           document.write('inicio <br />')
+
+           while(x <= 10){
+            document.write(x + '<br />')
+
+            //parar a contagem no 5
+            /*
+            if(x === 5){
+                break
+                }
+            */
+
+            //Nesse caso quando a coontagem chegar no 5 irá continuar(essa condição anula a parada no número 5)
+            x++
+            if(x === 5){
+                continue
+            }
+
+            document.write(x + <br />)
+            //Incrementando valor da variável até chegar no 10 ( 1 + 1)
+            //x++
+           }
+
+            //Além de incrementar quando chegar o valor próximo ele soma 3 número ( Quando estiver no 7)
+            //x += 3
+
+            document.write('fim <br />')
+           </script>
+    </head>
+    <body>
+    
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript</title>
+           <script>
+               //Mensagem de erro no console.log
+           throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso')
+           //netflix
+           var video = Array()
+
+                video[1] = Array()
+                video[1]['nome'] = 'La Casa de Papel'
+                video[1]['categoria'] = 'Ação'
+
+           function getVideo(video){
+               try{
+                   //lógica
+                   //http
+                   console.log(video[0]['nome'])
+
+               }catch(erro){
+                   tratarErro(erro)
+                   console.log('Agora sim podemos tratar esse erro')
+
+                }finally{
+                   console.log('Sempre passa por aqui (try / catch )')
+                }
+
+                console.log('A aplicação não morreu')
+           }
+
+           function tratarErro(e){
+            //lógica para tratar o erro no servidor
+            console.log(e)
+           }
+           
+            getVideo(video)
+           </script>
+    </head>
+    <body>
+    
+    </body>
+</html>
